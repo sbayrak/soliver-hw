@@ -1,6 +1,16 @@
-export type Product = {
-  pictures: string[];
+export type Color = {
+  code: string;
   name: string;
-  colors: string[];
+};
+
+export type Picture = {
+  src: string;
+  name: string;
+};
+
+export type Product = {
+  pictures: Picture[];
+  name: string;
+  colors: Color[];
   price: string;
 };
