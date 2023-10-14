@@ -1,6 +1,6 @@
 import { Product } from './types/state';
 
-export const data: Product[] = [
+export const products: Product[] = [
   {
     name: 'Strickpullover aus Baumwolle',
     colors: [
