@@ -2,6 +2,7 @@ import { Product } from './types/state';
 
 export const products: Product[] = [
   {
+    id: '123456789',
     name: 'Strickpullover aus Baumwolle',
     colors: [
       { code: '#472C4C', name: 'aubergine' },

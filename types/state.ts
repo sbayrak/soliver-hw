@@ -9,6 +9,7 @@ export type Picture = {
 };
 
 export type Product = {
+  id: string;
   pictures: Picture[];
   name: string;
   colors: Color[];
