@@ -1,4 +1,40 @@
-import { Product } from './types/state';
+import { Color, Product } from './types/state';
+
+enum Colors {
+  Aubergine = 'aubergine',
+  Navy = 'navy',
+}
+
+export const colors: Color[] = [
+  {
+    name: 'aubergine',
+    code: '#472C4C',
+  },
+  {
+    name: 'navy',
+    code: '#000080',
+  },
+  {
+    name: 'graphit',
+    code: '#414141',
+  },
+  {
+    name: 'black',
+    code: '#000000',
+  },
+  {
+    name: 'olivgrun',
+    code: '#5B6667',
+  },
+  {
+    name: 'natur',
+    code: '#F0E1CD',
+  },
+  {
+    name: 'tiefblau',
+    code: '#242432',
+  },
+];
 
 export const products: Product[] = [
   {
