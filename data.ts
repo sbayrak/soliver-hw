@@ -50,6 +50,19 @@ export const products: Product[] = [
       { name: 'navy', src: require('./assets/jacke-navy.png') },
       { name: 'natur', src: require('./assets/jacke-natur.png') },
     ],
-    price: 129,
+    price: 59,
+  },
+  {
+    id: '42345344676873',
+    name: 'Regular: Hose mit Dobbystruktur',
+    colors: [
+      { code: '#242432', name: 'tiefblau' },
+      { code: '#000000', name: 'black' },
+    ],
+    pictures: [
+      { name: 'tiefblau', src: require('./assets/hose-black.png') },
+      { name: 'black', src: require('./assets/hose-tiefblau.png') },
+    ],
+    price: 79,
   },
 ];
