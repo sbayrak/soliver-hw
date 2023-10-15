@@ -18,7 +18,7 @@ const ProductsList = (props: Props) => {
   const [searchTerm, setSearchTerm] = useState('');
   const { searchedProducts, loadingDebounced } = useDebouncedSearch(searchTerm);
 
-  console.log('producs ate ', products);
+  console.log('producs ate ', loading, products);
 
   return (
     <FlatList
@@ -45,15 +45,16 @@ const ProductsList = (props: Props) => {
       data={searchedProducts?.length ? searchedProducts : products}
       renderItem={({ item, index }) => (
         <ProductCard
-          onPress={() =>
-            props.navigation.navigate('Product', { id: item.id ?? 1 })
-          }
+          onPress={() => {
+            // props.navigation.navigate('Product', { id: item.id ?? 1 })
+          }}
           loading={loading || loadingDebounced}
-          img={item.images[0]}
+          img={item.pictures}
           price={item.price ?? 0}
-          title={item.title}
+          name={item.name}
           key={item.id}
           index={index}
+          color={item.colors}
         />
       )}
       keyExtractor={(item) => item.id.toString()}
